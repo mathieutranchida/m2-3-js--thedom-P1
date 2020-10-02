@@ -9,6 +9,10 @@
 
 function makeIntoTitle(sentence) {
   // Your code here
+  return sentence
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
 }
 
 // Part 2 - Test

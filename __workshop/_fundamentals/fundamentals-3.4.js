@@ -7,8 +7,17 @@
 //
 // - If the array contains any values that are not a number, the function should return undefined.
 
-function sum(arr) {
+function sum(numbers) {
   // Your code here
+  let answer = 0;
+  numbers.forEach((element) => {
+    if (typeof element !== "number") {
+      answer = undefined;
+    } else if (answer != undefined) {
+      answer += element;
+    }
+  });
+  return answer;
 }
 
 // Part 2 - Test

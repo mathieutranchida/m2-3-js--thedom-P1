@@ -7,6 +7,9 @@ test("Exercise 10", () => {
     "A Bb Ccc Dddd E Ff Ggg"
   );
   // add more tests here...
+  expect(makeIntoTitle("hello world")).toBe("Hello World");
+  expect(makeIntoTitle("HELLO WORLD")).toBe("Hello World");
+  expect(makeIntoTitle("hELLO woRld")).toBe("Hello World");
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect

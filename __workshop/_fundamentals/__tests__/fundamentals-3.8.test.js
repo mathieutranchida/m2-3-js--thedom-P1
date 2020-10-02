@@ -5,6 +5,9 @@ const reverseIt = require("../fundamentals-3.8");
 test("Exercise 8", () => {
   expect(reverseIt("abcdefgh")).toBe("hgfedcba");
   // add more tests here...
+  expect(reverseIt("abcd")).toBe("dcba");
+  expect(reverseIt("mit")).toBe("tim");
+  expect(reverseIt("neymar")).toBe("ramyen");
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect

@@ -11,6 +11,12 @@
 
 function getLetterAtIndex(str, index) {
   // Your code here
+  if (typeof str !== "string") return undefined;
+  else if (typeof index !== "number") return undefined;
+
+  if (str.charAt(index) === undefined) {
+    return undefined;
+  } else return str.charAt(index);
 }
 
 // Part 2 - Test

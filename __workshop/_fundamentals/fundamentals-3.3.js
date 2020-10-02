@@ -12,6 +12,15 @@
 
 function sum(arr) {
   // Your code here
+  let total = 0;
+  if (arr.length > 2) {
+    return undefined;
+  } else {
+    total = arr.reduce(function (a, b) {
+      return a + b;
+    });
+  }
+  return total;
 }
 
 // Part 2 - Test
